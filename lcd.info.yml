@@ -1,0 +1,13 @@
+name: LCD
+type: profile
+description: 'Local Community Distribution'
+core: 8.x
+dependencies:
+  - node
+  - block
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+themes:
+  - bartik
+  - seven
