@@ -4,27 +4,52 @@ description: 'Local Community Distribution'
 core: 8.x
 dependencies:
   - admin_toolbar
+  - automated_cron
+  - big_pipe
   - block
+  - block_content
   - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
   - courier
+  - datetime
   - dblog
   - dynamic_entity_reference
   - dynamic_page_cache
+  - editor
   - field
   - field_ui
   - file
   - filter
   - geolocation
+  - help
+  - history
+  - image
+  - menu_ui
+  - menu_link_content
   - node
+  - options
   - page_cache
+  - path
+  - rdf
   - rng
+  - search
+  - shortcut
   - system
+  - quickedit
   - taxonomy
   - text
   - toolbar
+  - tour
   - unlimited_number
   - update
   - user
+  - views
+  - views_ui
 themes:
   - bartik
   - seven
