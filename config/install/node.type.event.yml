@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 name: Event
 type: event
-description: ''
+description: 'Use <em>events</em> for community-related events like meetups, trainings, drupalcamps or drupalcons.'
 help: ''
 new_revision: true
 preview_mode: 1
