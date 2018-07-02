@@ -3,11 +3,28 @@ type: profile
 description: 'Local Community Distribution'
 core: 8.x
 dependencies:
-  - node
+  - admin_toolbar
   - block
+  - breakpoint
+  - courier
   - dblog
-  - page_cache
+  - dynamic_entity_reference
   - dynamic_page_cache
+  - field
+  - field_ui
+  - file
+  - filter
+  - geolocation
+  - node
+  - page_cache
+  - rng
+  - system
+  - taxonomy
+  - text
+  - toolbar
+  - unlimited_number
+  - update
+  - user
 themes:
   - bartik
   - seven
