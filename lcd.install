@@ -17,8 +17,20 @@ function lcd_install() {
   standard_install();
 
   // Create a default event type
-  \Drupal\taxonomy\Entity\Term::create([
-    'name' => 'Drupal Camp',
-    'vid' => 'event_types'
-  ])->save();
+  $default_event_types = [
+    'DrupalCon',
+    'Drupal Europe',
+    'Drupal Dev Days',
+    'Drupal Camp',
+    'Drupal Global Training Days',
+    'Summit',
+    'User Group',
+    'Training',
+  ];
+  foreach ($default_event_types as $event_type) {
+    \Drupal\taxonomy\Entity\Term::create([
+      'name' => $event_type,
+      'vid' => 'event_types'
+    ])->save();
+  }
 }
