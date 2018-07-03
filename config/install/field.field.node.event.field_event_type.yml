@@ -34,12 +34,6 @@ settings:
   courier_email:
     handler: 'default:courier_email'
     handler_settings: {  }
-  rng_rule:
-    handler: 'default:rng_rule'
-    handler_settings: {  }
-  rng_rule_component:
-    handler: 'default:rng_rule_component'
-    handler_settings: {  }
   file:
     handler: 'default:file'
     handler_settings: {  }
@@ -49,19 +43,22 @@ settings:
   courier_message_queue_item:
     handler: 'default:courier_message_queue_item'
     handler_settings: {  }
-  registrant:
-    handler: 'default:registrant'
-    handler_settings: {  }
-  registration:
-    handler: 'default:registration'
-    handler_settings: {  }
-  registration_group:
-    handler: 'default:registration_group'
-    handler_settings: {  }
-  rng_rule_scheduler:
-    handler: 'default:rng_rule_scheduler'
-    handler_settings: {  }
   user:
     handler: 'default:user'
+    handler_settings: {  }
+  comment:
+    handler: 'default:comment'
+    handler_settings: {  }
+  contact_message:
+    handler: 'default:contact_message'
+    handler_settings: {  }
+  block_content:
+    handler: 'default:block_content'
+    handler_settings: {  }
+  menu_link_content:
+    handler: 'default:menu_link_content'
+    handler_settings: {  }
+  shortcut:
+    handler: 'default:shortcut'
     handler_settings: {  }
 field_type: dynamic_entity_reference
