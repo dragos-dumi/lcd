@@ -3,11 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.field_end_date
+    - field.field.node.event.field_event_date
     - field.field.node.event.field_event_type
     - field.field.node.event.field_event_website
     - field.field.node.event.field_location
-    - field.field.node.event.field_start_date
     - field.field.node.event.rng_capacity
     - field.field.node.event.rng_registrants_duplicate
     - field.field.node.event.rng_registrants_maximum
@@ -18,8 +17,10 @@ dependencies:
     - field.field.node.event.rng_status
     - node.type.event
   module:
+    - datetime_range
     - dynamic_entity_reference
     - geolocation
+    - path
     - text
 id: node.event.default
 targetEntityType: node
@@ -41,11 +42,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_end_date:
-    weight: 9
+  field_event_date:
+    weight: 10
     settings: {  }
     third_party_settings: {  }
-    type: datetime_timestamp
+    type: daterange_default
     region: content
   field_event_type:
     weight: 7
@@ -54,7 +55,7 @@ content:
     type: dynamic_entity_reference_options_select
     region: content
   field_event_website:
-    weight: 10
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -62,7 +63,7 @@ content:
     type: string_textfield
     region: content
   field_location:
-    weight: 11
+    weight: 12
     settings:
       populate_address_field: ''
       target_address_field: null
@@ -96,12 +97,12 @@ content:
     third_party_settings: {  }
     type: geolocation_googlegeocoder
     region: content
-  field_start_date:
-    weight: 8
+  path:
+    type: path
+    weight: 13
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: datetime_timestamp
-    region: content
   promote:
     type: boolean_checkbox
     settings:

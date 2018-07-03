@@ -3,11 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.field_end_date
+    - field.field.node.event.field_event_date
     - field.field.node.event.field_event_type
     - field.field.node.event.field_event_website
     - field.field.node.event.field_location
-    - field.field.node.event.field_start_date
     - field.field.node.event.rng_capacity
     - field.field.node.event.rng_registrants_duplicate
     - field.field.node.event.rng_registrants_maximum
@@ -18,6 +17,7 @@ dependencies:
     - field.field.node.event.rng_status
     - node.type.event
   module:
+    - datetime_range
     - dynamic_entity_reference
     - geolocation
     - text
@@ -34,15 +34,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_end_date:
-    weight: 4
+  field_event_date:
+    weight: 3
     label: inline
     settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
-    type: timestamp
+    type: daterange_default
     region: content
   field_event_type:
     weight: 2
@@ -53,7 +53,7 @@ content:
     type: dynamic_entity_reference_label
     region: content
   field_event_website:
-    weight: 5
+    weight: 4
     label: inline
     settings:
       link_to_entity: false
@@ -61,7 +61,7 @@ content:
     type: string
     region: content
   field_location:
-    weight: 6
+    weight: 5
     label: above
     settings:
       title: ''
@@ -92,16 +92,6 @@ content:
         gestureHandling: auto
     third_party_settings: {  }
     type: geolocation_map
-    region: content
-  field_start_date:
-    weight: 3
-    label: inline
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
-    type: timestamp
     region: content
   links:
     weight: 0

@@ -3,6 +3,7 @@ type: profile
 description: 'Local Community Distribution'
 core: 8.x
 dependencies:
+  - admin_toolbar
   - automated_cron
   - big_pipe
   - block
@@ -16,6 +17,7 @@ dependencies:
   - contact
   - courier
   - datetime
+  - datetime_range
   - dblog
   - dynamic_entity_reference
   - dynamic_page_cache
