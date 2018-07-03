@@ -3,11 +3,9 @@ type: profile
 description: 'Local Community Distribution'
 core: 8.x
 dependencies:
-  - admin_toolbar
-  - automated_cron
-  - big_pipe
+  - node
+  - history
   - block
-  - block_content
   - breakpoint
   - ckeditor
   - color
@@ -15,41 +13,31 @@ dependencies:
   - comment
   - contextual
   - contact
-  - courier
+  - menu_link_content
   - datetime
-  - datetime_range
-  - dblog
-  - dynamic_entity_reference
-  - dynamic_page_cache
+  - block_content
+  - quickedit
   - editor
-  - field
-  - field_ui
-  - file
-  - filter
-  - geolocation
   - help
-  - history
   - image
   - menu_ui
-  - menu_link_content
-  - node
   - options
-  - page_cache
   - path
-  - rdf
+  - page_cache
+  - dynamic_page_cache
+  - big_pipe
+  - taxonomy
+  - dblog
   - search
   - shortcut
-  - system
-  - quickedit
-  - taxonomy
-  - text
   - toolbar
-  - tour
-  - unlimited_number
-  - update
-  - user
+  - field_ui
+  - file
+  - rdf
   - views
   - views_ui
+  - tour
+  - automated_cron
 themes:
   - bartik
   - seven
