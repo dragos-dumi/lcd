@@ -15,4 +15,10 @@ function lcd_install() {
   // First, do everything in standard profile.
   include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
   standard_install();
+
+  // Create a default event type
+  \Drupal\taxonomy\Entity\Term::create([
+    'name' => 'Drupal Camp',
+    'vid' => 'event_types'
+  ])->save();
 }
