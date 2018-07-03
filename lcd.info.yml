@@ -38,6 +38,9 @@ dependencies:
   - views_ui
   - tour
   - automated_cron
+  - datetime_range
+  - dynamic_entity_reference
+  - geolocation
 
   - config_update
   - config_filter
