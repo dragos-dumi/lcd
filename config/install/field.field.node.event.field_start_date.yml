@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_start_date
     - node.type.event
+  module:
+    - datetime
 id: node.event.field_start_date
 field_name: field_start_date
 entity_type: node
@@ -12,9 +14,7 @@ label: 'Start date'
 description: ''
 required: true
 translatable: false
-default_value:
-  -
-    value: 1530539979
+default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: timestamp
+field_type: datetime
