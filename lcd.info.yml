@@ -38,6 +38,21 @@ dependencies:
   - views_ui
   - tour
   - automated_cron
+
+  - config_update
+  - config_filter
+  - config_ignore
+  - config_split
+  - admin_toolbar
+  - diff
+  - eu_cookie_compliance
+  - honeypot
+  - metatag
+  - paragraphs
+  - pathauto
+  - redirect
+  - swiftmailer
+  - token
 themes:
   - bartik
   - seven
