@@ -39,9 +39,8 @@ dependencies:
   - tour
   - automated_cron
   - datetime_range
-  - dynamic_entity_reference
-  - geolocation
   - lcd_events
+  - lcd_organisation
 themes:
   - bartik
   - seven
