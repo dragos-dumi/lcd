@@ -41,6 +41,7 @@ dependencies:
   - datetime_range
   - dynamic_entity_reference
   - geolocation
+  - lcd_events
 themes:
   - bartik
   - seven
