@@ -45,3 +45,12 @@ projects[swiftmailer][version] = 1.0-beta2
 
 projects[token][type] = module
 projects[token][version] = 1.3
+
+projects[dynamic_entity_reference][type] = module
+projects[dynamic_entity_reference][version] = 1.5
+
+projects[geolocation][type] = module
+projects[geolocation][version] = 1.11
+
+projects[address][type] = module
+projects[address][version] = 1.4
