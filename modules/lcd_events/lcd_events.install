@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_install().
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function lcd_events_install() {
+  // Create a default event type
+  $default_event_types = [
+    'DrupalCamp',
+    'DrupalCon',
+    'Drupal Dev Days',
+    'Drupal Europe',
+    'Global Training Days',
+    'Other',
+    'Summit',
+    'Training',
+    'User Group',
+  ];
+  foreach ($default_event_types as $event_type) {
+    \Drupal\taxonomy\Entity\Term::create([
+      'name' => $event_type,
+      'vid' => 'event_types'
+    ])->save();
+  }
+}

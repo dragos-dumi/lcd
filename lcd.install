@@ -15,22 +15,4 @@ function lcd_install() {
   // First, do everything in standard profile.
   include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
   standard_install();
-
-  // Create a default event type
-  $default_event_types = [
-    'DrupalCon',
-    'Drupal Europe',
-    'Drupal Dev Days',
-    'Drupal Camp',
-    'Drupal Global Training Days',
-    'Summit',
-    'User Group',
-    'Training',
-  ];
-  foreach ($default_event_types as $event_type) {
-    \Drupal\taxonomy\Entity\Term::create([
-      'name' => $event_type,
-      'vid' => 'event_types'
-    ])->save();
-  }
 }
