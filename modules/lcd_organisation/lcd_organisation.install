@@ -1,0 +1,73 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the LCD Organisation module.
+ */
+
+
+/**
+ * Implements hook_install().
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function lcd_organisation_install() {
+  $services = [
+    '3rd party Integration',
+    'Accessibility',
+    'Cloud hosting',
+    'Consulting',
+    'Content strategy',
+    'Data migration',
+    'Dedicated hosting',
+    'Deployment',
+    'Design',
+    'Development',
+    'E-commerce',
+    'Front-end Development',
+    'Information architecture',
+    'Infrastructure Planning',
+    'Managed Enterprise hosting',
+    'Marketing and Social Media',
+    'Mobile App Development',
+    'Mobile Site Development',
+    'Multilingual websites',
+    'Multisite installations',
+    'Performance Tuning and Optimization',
+    'Project Management',
+    'Quality Assurance',
+    'Reseller hosting',
+    'Security reviews',
+    'SEO',
+    'Shared Hosting',
+    'Site Audits',
+    'Site Building',
+    'Support',
+    'Theming',
+    'Upgrades',
+    'Usability',
+    'VPS hosting',
+  ];
+
+  foreach ($services as $service) {
+    \Drupal\taxonomy\Entity\Term::create([
+      'name' => $service,
+      'language' => 'en',
+      'vid' => 'organisation_services',
+    ])->save();
+  }
+
+  $sizes = [
+    'Micro (≤ 10 employees)',
+    'Small (≤ 50 employees)',
+    'Medium (≤ 250 employees)',
+    'Large (250+ employees)'
+  ];
+  foreach ($sizes as $size) {
+    \Drupal\taxonomy\Entity\Term::create([
+      'name' => $size,
+      'language' => 'en',
+      'vid' => 'number_of_employees',
+    ])->save();
+  }
+
+}

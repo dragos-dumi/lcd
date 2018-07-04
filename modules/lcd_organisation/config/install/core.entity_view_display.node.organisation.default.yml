@@ -1,0 +1,86 @@
+uuid: 28a59aeb-2e0c-4656-9452-33340d904bd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.organisation.body
+    - field.field.node.organisation.field_organisation_address
+    - field.field.node.organisation.field_organisation_admins
+    - field.field.node.organisation.field_organisation_logo
+    - field.field.node.organisation.field_organisation_no_employees
+    - field.field.node.organisation.field_organisation_public_list
+    - field.field.node.organisation.field_organisation_services
+    - field.field.node.organisation.field_organisation_website
+    - node.type.organisation
+  module:
+    - address
+    - image
+    - link
+    - text
+    - user
+_core:
+  default_config_hash: SaAbwqoFAYObJmFZqj_ZUnV6BQlgOZPlq_mJJkuRPEY
+id: node.organisation.default
+targetEntityType: node
+bundle: organisation
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_organisation_address:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_organisation_logo:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_organisation_no_employees:
+    weight: 6
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_organisation_services:
+    weight: 5
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_organisation_website:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 120
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_organisation_admins: true
+  field_organisation_public_list: true

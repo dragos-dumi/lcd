@@ -1,0 +1,11 @@
+name: LCD Organisation
+description: 'Provide Organisation content type.'
+type: module
+core: 8.x
+dependencies:
+  - address
+  - field
+  - node
+  - taxonomy
+  - views
+package: lcd

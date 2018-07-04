@@ -1,0 +1,9 @@
+uuid: 2477177a-3a25-4c76-a9b4-acd5c30ef2d8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Number of employees'
+vid: number_of_employees
+description: 'Number of employees for an organisation'
+hierarchy: 0
+weight: 0

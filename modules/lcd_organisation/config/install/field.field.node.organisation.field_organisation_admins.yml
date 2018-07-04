@@ -1,0 +1,28 @@
+uuid: c475ac3a-cf98-48f4-bf10-abd66173d8fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisation_admins
+    - node.type.organisation
+id: node.organisation.field_organisation_admins
+field_name: field_organisation_admins
+entity_type: node
+bundle: organisation
+label: Administrators
+description: 'List here people who have access to edit the administration profile data'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

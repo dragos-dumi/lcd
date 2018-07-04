@@ -1,0 +1,29 @@
+uuid: cc6290c6-f5ed-44ee-87a3-4f72fd4b40a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisation_no_employees
+    - node.type.organisation
+    - taxonomy.vocabulary.number_of_employees
+id: node.organisation.field_organisation_no_employees
+field_name: field_organisation_no_employees
+entity_type: node
+bundle: organisation
+label: 'Number of employees'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      number_of_employees: number_of_employees
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

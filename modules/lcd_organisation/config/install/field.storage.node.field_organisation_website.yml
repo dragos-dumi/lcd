@@ -1,0 +1,19 @@
+uuid: a1ce686f-f0c9-4158-8aea-4b7fc5940644
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_organisation_website
+field_name: field_organisation_website
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

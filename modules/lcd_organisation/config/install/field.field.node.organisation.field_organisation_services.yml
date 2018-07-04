@@ -1,0 +1,29 @@
+uuid: 20e392eb-5ab6-4715-9495-53cc69e9091e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisation_services
+    - node.type.organisation
+    - taxonomy.vocabulary.organisation_services
+id: node.organisation.field_organisation_services
+field_name: field_organisation_services
+entity_type: node
+bundle: organisation
+label: Services
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      organisation_services: organisation_services
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
