@@ -1,0 +1,63 @@
+
+.l-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+
+  &.page-title {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+.l-content {
+  padding-bottom: 60px;
+}
+
+.l-footer {
+  padding: 40px 1em;
+}
+
+.l-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+
+  .card {
+    width: 100%;
+    margin: 0.5rem;
+
+    @media screen and (min-width: 560px) and (max-width: $b-large - 1px) {  // Temporary breakpoints for better results.
+      display: flex;
+    }
+
+    @media screen and (min-width: $b-large) {
+      width: calc(33.333% - 1rem);
+    }
+  }
+
+  .card-small {
+    margin: 0.5rem;
+    width: 100%;
+
+    @media screen and (min-width: $b-large) {
+      width: calc(33.333% - 1rem);
+    }
+  }
+}
+
+.l-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+
+  .gallery-item {
+    margin: 0.5rem;
+    width: 100%;
+
+    @media screen and (min-width: $b-large) {
+      width: calc(33.333% - 1rem);
+    }
+  }
+}

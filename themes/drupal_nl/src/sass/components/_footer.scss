@@ -1,0 +1,14 @@
+
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  font-family: $font-book;
+}
+
+.footer-block {
+  @media screen and (min-width: $b-medium) {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+  }
+}

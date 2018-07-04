@@ -1,0 +1,33 @@
+  <div class="card__img">
+    {{ content.field_image }}
+  </div>
+
+  <div class="card__content">
+    
+    {# conform design geen titel op de card --
+    {{ title_prefix }}
+    {% if not page %}
+      <h2{{ title_attributes }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    
+    {{ title_suffix }}
+    -- #}
+
+  {# render globale datum om check te kunnen doen #}
+  {% set field_global_date = content.field_global_date|render %}
+  
+    <div{{ content_attributes }}>
+
+    {# Check of globale datum is gevuld #}
+    {% if field_global_date %}
+        {# strip <p> element van het veld #}
+        {{ field_global_date }}
+      {% else %}  
+        {{ content.field_date }}
+      {% endif %}
+      {{ content|without('field_image', 'field_date', 'field_global_date') }}
+
+    </div>
+  </div>

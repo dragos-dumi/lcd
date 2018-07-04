@@ -1,0 +1,10 @@
+.messages {
+	margin: 30px 0;
+	padding: 15px 20px;
+	border-left: 8px solid $summer-blue;
+	background-color: $bg-light-gray;
+
+	&--error {
+		border-left-color: #c00;
+	}
+}

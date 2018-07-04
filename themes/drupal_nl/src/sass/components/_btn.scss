@@ -1,0 +1,42 @@
+
+.btn {
+  display: inline-block;
+}
+
+.btn--cta {
+  > a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: $white;
+    background-color: $orange;
+    text-decoration: none;
+    transition: background-color .35s;
+    font-family: $font-heavy;
+
+    &:hover,
+    &:focus {
+      background-color: darken($orange, 10%);
+    }
+  }
+}
+
+/* buttons over de hele breedte op mobiel */
+@media (max-width: $b-small) {
+  .button {
+    width:100%;
+  }
+}
+
+.button {
+  font-family: $font-heavy;
+  border: none;
+  padding: 10px 15px;
+  color: $white;
+  background-color: $orange;
+  text-decoration: none;
+  transition: background-color .35s;
+  &:hover,
+  &:focus {
+    background-color: darken($orange, 10%);
+  }
+}

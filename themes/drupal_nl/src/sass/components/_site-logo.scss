@@ -1,0 +1,16 @@
+
+.site-logo {
+  display: block;
+  padding: 10px 30px 10px 15px;
+  height: 55px;
+
+  @media screen and (min-width: $b-large) {
+    float: left;
+  }
+
+  > img {
+    max-width: 21px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+}

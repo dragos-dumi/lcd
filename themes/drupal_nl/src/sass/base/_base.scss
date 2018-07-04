@@ -1,0 +1,66 @@
+
+a {
+  color: $summer-blue;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-default;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-book;
+  font-weight: normal;
+  margin-top: 0;
+}
+h2 {
+  line-height: 133%;
+}
+
+/* bij wordwrap op kleine schermen regelafstand moet groter */
+h1 {
+  font-size: 2.5rem;
+  line-height: 120%;
+  .page-title & {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+figcaption {
+  font-size: 14px;
+  color: $bg-dark;
+}
+
+table {
+  thead {
+    th {
+      background: $bg-light-gray;
+      border: solid $text-medium-gray;
+      border-width: 1px 0;
+      text-transform: uppercase;
+    }
+  }
+  th, td {
+    padding: 10px 12px;
+  }
+}

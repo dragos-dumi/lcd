@@ -1,0 +1,88 @@
+
+.form-wrapper {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  font-family: $font-heavy;
+  input + & {
+    display: inline;
+  }
+}
+
+legend {
+  font-family: $font-heavy;
+}
+
+/* zorgt voor sacing tussen de buttons op mobiel */
+.form-actions {
+  > .button {
+    margin-bottom:10px;
+  }
+}
+
+.form-item {
+  line-height: 133%; // TODO: Why is this line here?
+  margin-bottom: 20px;
+  > input, textarea {
+    padding: 8px 10px;
+    border: none;
+    background-color: rgba($black, .03);
+    line-height: 24px;
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: lighten($text-medium-gray,25);
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: lighten($text-medium-gray,25);
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: lighten($text-medium-gray,25);
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: lighten($text-medium-gray,25);
+    }
+    &:focus {
+      background-color: rgba($black, .07);
+    }
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 1000px darken($bg-light-gray, 2) inset;
+    }
+  }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
+  > .description {
+    font-family: $font-light;
+    color: $text-medium-gray;
+    margin-top: 5px;
+  }
+  > input, label, textarea {
+    max-width:100%;
+  }
+  > label {
+    margin-bottom: 4px;
+  }
+  > legend {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
+.captcha {
+  line-height: 133%;
+  .form-item {
+    margin: 10px 0;
+  }
+}
+
+.webform-submission-form {
+  line-height: 133%;
+  p {
+    margin-top: 0;
+  }
+}

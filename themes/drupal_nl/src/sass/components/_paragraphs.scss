@@ -1,0 +1,28 @@
+
+$paragraph-margin: 40px;
+
+.paragraph--type--intro {
+  text-align: center;
+  background-color: $bg-light-gray;
+  padding: $paragraph-margin 0;
+  margin-bottom: $paragraph-margin;
+}
+
+.paragraph--type--partners {
+  padding: 0 0 80px;
+}
+
+
+.paragraph--type--intro:after {
+  content:'';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-top: solid 30px $bg-light-gray;
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+  margin-top: $paragraph-margin;
+}

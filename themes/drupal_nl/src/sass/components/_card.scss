@@ -1,0 +1,96 @@
+
+.card,
+.card-small {
+  background-color: $summer-blue;
+  color: $white;
+  .-bg-item-white & {
+    background-color: $white;
+    color: $black;
+    & a {
+      color: $summer-blue;
+    }
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  h2 {
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+
+.card__img {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+
+  &:hover {
+    a {
+      img {
+        transform: scale(1.1);
+        transition: transform .25s ease-out;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
+
+.card__content {
+  padding: 25px;
+
+  .field--name-field-date, .field--name-field-global-date { // TODO: Replace class for Event date on frontpage.
+    font-size: 24px;
+    line-height: 1em;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: $b-medium - 1px) {  // Temporary breakpoints for better results.
+  .card__img {
+    flex: 1;
+  }
+
+  .card__content {
+    flex: 1;
+  }
+}
+@media screen and (min-width: $b-medium) and (max-width: $b-large - 1px) {  // Temporary breakpoints for better results.
+  .card__img {
+    flex: 2;
+  }
+
+  .card__content {
+    flex: 3;
+  }
+}
+
+.card__title {
+
+}
+
+.card__text {
+
+}
