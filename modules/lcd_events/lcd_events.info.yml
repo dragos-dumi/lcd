@@ -1,0 +1,22 @@
+name: LCD events
+description: 'Provide Events content type and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - drupalcampfr_core
+  - drupalcampfr_news
+  - entityqueue
+  - field
+  - file
+  - language
+  - link
+  - menu_ui
+  - node
+  - path
+  - pathauto
+  - system
+  - text
+  - user
+  - views
+package: lcd
