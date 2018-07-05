@@ -1,0 +1,58 @@
+// SITE NAME
+// =====================
+.site-name {
+  > a {
+    display: block;
+    color:   $white;
+
+    @include breakpoint(small only) {
+      text-align: center;
+
+      > img {
+        max-height: 42px;
+      }
+    }
+
+    @include breakpoint(medium only) {
+      margin-top: 8px;
+    }
+  }
+}
+
+// TOPBAR EXTRA ELEMENTS
+// =====================
+
+/* Search button
+   ============= */
+.header--search-block {
+  @include breakpoint(medium) {
+    float: right;
+  }
+
+  .button--search {
+    margin-bottom: 0;
+    padding:       .25rem 1rem;
+    font-size:     1.3rem !important;
+    line-height:   2rem;
+
+    @include breakpoint(medium) {
+      height:      70px;
+      padding:     .85rem 1rem;
+      line-height: 40px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $drupal-blue-light;
+      color:            $white !important;
+    }
+  }
+}
+
+/* User Account
+   ============*/
+.header--user-account {
+  @include breakpoint(medium) {
+    float: right;
+  }
+}

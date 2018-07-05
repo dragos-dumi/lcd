@@ -1,0 +1,46 @@
+// Node Planet Element
+// -------------------
+
+.planet-element {
+
+  &.teaser {
+    @include shadow();
+
+    @include breakpoint(small only) {
+      margin-top: $global-margin;
+    }
+    background-color: $white;
+
+    .planet-element--feature-image {
+      border-bottom: thin solid $light-gray;
+    }
+
+    .planet-element--author {
+      margin-top: -$global-padding*2;
+      padding:    0 $global-padding*2;
+
+    }
+
+    .planet-element--title {
+      padding:   0 $global-padding*2 $global-padding/2;
+      font-size: 1.75rem;
+
+      a {
+        color: $drupal-blue-lighter;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $drupal-blue-dark;
+        }
+      }
+    }
+
+    .planet-element--content {
+      padding: 0 $global-padding*2 $global-padding*3;
+      color:   $dark-gray;
+    }
+
+  }
+}
+
