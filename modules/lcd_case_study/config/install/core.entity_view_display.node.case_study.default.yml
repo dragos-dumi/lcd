@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.case_study.body
     - field.field.node.case_study.field_case_study_drupal_version
     - field.field.node.case_study.field_case_study_key_projects
+    - field.field.node.case_study.field_case_study_logo
     - field.field.node.case_study.field_case_study_orgranisations
     - field.field.node.case_study.field_case_study_screenshots
     - field.field.node.case_study.field_case_study_team_members
@@ -24,19 +25,19 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_case_study_drupal_version:
-    weight: 107
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_case_study_key_projects:
-    weight: 104
+    weight: 4
     label: above
     settings:
       link: true
@@ -44,7 +45,7 @@ content:
     type: entity_reference_label
     region: content
   field_case_study_orgranisations:
-    weight: 105
+    weight: 5
     label: above
     settings:
       link: true
@@ -52,8 +53,8 @@ content:
     type: entity_reference_label
     region: content
   field_case_study_screenshots:
-    weight: 102
-    label: above
+    weight: 7
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -61,7 +62,7 @@ content:
     type: image
     region: content
   field_case_study_team_members:
-    weight: 106
+    weight: 6
     label: above
     settings:
       link: true
@@ -69,8 +70,8 @@ content:
     type: entity_reference_label
     region: content
   field_case_study_website:
-    weight: 103
-    label: above
+    weight: 1
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -81,8 +82,9 @@ content:
     type: link
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_case_study_logo: true
