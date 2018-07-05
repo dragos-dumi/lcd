@@ -52,5 +52,14 @@ projects[dynamic_entity_reference][version] = 1.5
 projects[geolocation][type] = module
 projects[geolocation][version] = 1.11
 
+projects[geolocation_map][type] = module
+projects[geolocation_map][version] = 2.5
+
 projects[address][type] = module
 projects[address][version] = 1.4
+
+projects[leaflet][type] = module
+projects[leaflet][version] = 1.0-beta
+
+projects[leaflet_views][type] = module
+projects[leaflet_views][version] = 1.0-beta
