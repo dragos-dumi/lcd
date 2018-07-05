@@ -1,4 +1,3 @@
-uuid: 8724f3b6-9683-4ac0-86a9-82a31bc78535
 langcode: en
 status: true
 dependencies:
@@ -19,8 +18,6 @@ dependencies:
     - link
     - path
     - text
-_core:
-  default_config_hash: CrzuZHdjQ6kLroSrgNAWXK4b5TtmEKqw5_ev4bsHesA
 id: node.organisation.default
 targetEntityType: node
 bundle: organisation

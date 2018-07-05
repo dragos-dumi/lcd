@@ -1,12 +1,9 @@
-uuid: cd6a62db-2f1c-4803-b180-908832b8e212
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_organisation_public_list
     - node.type.organisation
-_core:
-  default_config_hash: VJfWoSnyGHqczfCySKua58cSRQ_4S7-UZYraZAHDT_Y
 id: node.organisation.field_organisation_public_list
 field_name: field_organisation_public_list
 entity_type: node
