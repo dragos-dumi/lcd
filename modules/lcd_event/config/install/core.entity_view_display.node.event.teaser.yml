@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_type
+    - field.field.node.event.field_event_website
     - node.type.event
   module:
     - datetime_range
@@ -51,3 +52,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_event_location: true
+  field_event_website: true

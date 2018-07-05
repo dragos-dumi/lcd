@@ -15,5 +15,4 @@ dependencies:
   - datetime_range
   - dynamic_entity_reference
   - lcd_organisation
-  - lcd_event
 package: lcd

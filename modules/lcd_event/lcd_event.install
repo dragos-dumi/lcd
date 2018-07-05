@@ -16,7 +16,7 @@ function lcd_event_install() {
     'Other',
     'Summit',
     'Training',
-    'User Group',
+    'User Group Meeting',
   ];
   foreach ($default_event_types as $event_type) {
     \Drupal\taxonomy\Entity\Term::create([
