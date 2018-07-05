@@ -4,14 +4,15 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_location
     - field.field.node.event.field_event_type
     - field.field.node.event.field_event_website
-    - field.field.node.event.field_location
     - node.type.event
   module:
     - datetime_range
     - dynamic_entity_reference
-    - geolocation
+    - geofield_map
+    - link
     - path
     - text
 id: node.event.default
@@ -35,10 +36,43 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_event_date:
-    weight: 10
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
+    region: content
+  field_event_location:
+    weight: 10
+    settings:
+      map_google_places:
+        places_additional_options: ''
+        places_control: 0
+      map_library: leaflet
+      map_type_google: roadmap
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: '1'
+      map_dimensions:
+        width: 100%
+        height: 450px
+      zoom:
+        start: '6'
+        focus: '12'
+        min: '1'
+        max: '22'
+      geoaddress_field:
+        field: '0'
+        disabled: '1'
+        hidden: 0
+      default_value:
+        lat: '0'
+        lon: '0'
+      click_to_find_marker: 0
+      click_to_place_marker: 0
+      html5_geolocation: 0
+      map_google_api_key: ''
+      zoom_level: 5
+    third_party_settings: {  }
+    type: geofield_map
     region: content
   field_event_type:
     weight: 7
@@ -47,51 +81,16 @@ content:
     type: dynamic_entity_reference_options_select
     region: content
   field_event_website:
-    weight: 11
+    weight: 9
     settings:
-      size: 60
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_location:
-    weight: 12
-    settings:
-      populate_address_field: ''
-      target_address_field: null
-      explicite_actions_address_field: ''
-      default_longitude: null
-      default_latitude: null
-      auto_client_location: ''
-      auto_client_location_marker: ''
-      allow_override_map_settings: 0
-      google_map_settings:
-        type: ROADMAP
-        zoom: '10'
-        minZoom: 0
-        maxZoom: 18
-        rotateControl: 0
-        mapTypeControl: 1
-        streetViewControl: 1
-        zoomControl: 1
-        fullscreenControl: 0
-        scrollwheel: 1
-        disableDoubleClickZoom: 0
-        draggable: 1
-        height: 400px
-        width: 100%
-        info_auto_display: 1
-        marker_icon_path: ''
-        disableAutoPan: 1
-        style: ''
-        preferScrollingToZooming: 0
-        gestureHandling: auto
-    third_party_settings: {  }
-    type: geolocation_googlegeocoder
+    type: link_default
     region: content
   path:
     type: path
-    weight: 13
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -39,6 +39,8 @@ dependencies:
   - tour
   - automated_cron
   - datetime_range
+  - geofield
+  - geofield_map
   - lcd_events
   - lcd_organisation
 themes:

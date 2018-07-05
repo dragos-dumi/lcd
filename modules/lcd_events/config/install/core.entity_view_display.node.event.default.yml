@@ -4,14 +4,15 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_location
     - field.field.node.event.field_event_type
     - field.field.node.event.field_event_website
-    - field.field.node.event.field_location
     - node.type.event
   module:
     - datetime_range
     - dynamic_entity_reference
-    - geolocation
+    - leaflet
+    - link
     - text
     - user
 id: node.event.default
@@ -36,6 +37,37 @@ content:
     third_party_settings: {  }
     type: daterange_default
     region: content
+  field_event_location:
+    weight: 5
+    label: hidden
+    settings:
+      multiple_map: '0'
+      leaflet_map: 'OSM Mapnik'
+      height: '400'
+      map_position:
+        zoom: '12'
+        minZoom: '1'
+        maxZoom: '18'
+        force: 0
+      icon:
+        iconUrl: ''
+        shadowUrl: ''
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+      popup: 0
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
   field_event_type:
     weight: 2
     label: inline
@@ -48,42 +80,13 @@ content:
     weight: 4
     label: inline
     settings:
-      link_to_entity: false
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: string
-    region: content
-  field_location:
-    weight: 5
-    label: above
-    settings:
-      title: ''
-      set_marker: '1'
-      common_map: ''
-      info_text: ''
-      use_overridden_map_settings: 0
-      google_map_settings:
-        type: ROADMAP
-        zoom: '10'
-        minZoom: 0
-        maxZoom: 18
-        rotateControl: 0
-        mapTypeControl: 1
-        streetViewControl: 1
-        zoomControl: 1
-        fullscreenControl: 0
-        scrollwheel: 1
-        disableDoubleClickZoom: 0
-        draggable: 1
-        height: 400px
-        width: 100%
-        info_auto_display: 1
-        marker_icon_path: ''
-        disableAutoPan: 1
-        style: ''
-        preferScrollingToZooming: 0
-        gestureHandling: auto
-    third_party_settings: {  }
-    type: geolocation_map
+    type: link
     region: content
   links:
     weight: 0
