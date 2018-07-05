@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_study_drupal_version
+    - node.type.case_study
+  module:
+    - options
+id: node.case_study.field_case_study_drupal_version
+field_name: field_case_study_drupal_version
+entity_type: node
+bundle: case_study
+label: 'Drupal version'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_study_key_projects
+    - node.type.case_study
+    - taxonomy.vocabulary.drupal_contributed_projects
+id: node.case_study.field_case_study_key_projects
+field_name: field_case_study_key_projects
+entity_type: node
+bundle: case_study
+label: 'Key modules/theme/distribution used'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      drupal_contributed_projects: drupal_contributed_projects
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

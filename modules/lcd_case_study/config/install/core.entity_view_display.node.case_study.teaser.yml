@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.case_study.body
+    - field.field.node.case_study.field_case_study_drupal_version
+    - field.field.node.case_study.field_case_study_key_projects
+    - field.field.node.case_study.field_case_study_logo
+    - field.field.node.case_study.field_case_study_orgranisations
+    - field.field.node.case_study.field_case_study_screenshots
+    - field.field.node.case_study.field_case_study_team_members
+    - field.field.node.case_study.field_case_study_website
+    - image.style.medium
+    - node.type.case_study
+  module:
+    - image
+    - text
+    - user
+id: node.case_study.teaser
+targetEntityType: node
+bundle: case_study
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_case_study_logo:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_case_study_drupal_version: true
+  field_case_study_key_projects: true
+  field_case_study_orgranisations: true
+  field_case_study_screenshots: true
+  field_case_study_team_members: true
+  field_case_study_website: true
