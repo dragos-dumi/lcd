@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.organisation.body
+    - field.field.node.organisation.field_best_practices
     - field.field.node.organisation.field_organisation_address
     - field.field.node.organisation.field_organisation_admins
     - field.field.node.organisation.field_organisation_logo
@@ -14,6 +15,7 @@ dependencies:
   module:
     - address
     - image
+    - lcd_organisation
     - link
     - text
     - user
@@ -28,6 +30,13 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_best_practices:
+    weight: 7
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: org_numeric_score
     region: content
   field_organisation_address:
     weight: 2

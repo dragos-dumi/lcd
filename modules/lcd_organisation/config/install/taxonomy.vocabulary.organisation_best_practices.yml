@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Organisation best practices'
+vid: organisation_best_practices
+description: 'A list of best practices an organisation is applying during the project development process'
+hierarchy: 0
+weight: 0

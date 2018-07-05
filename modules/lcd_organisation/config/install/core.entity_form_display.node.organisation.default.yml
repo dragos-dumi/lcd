@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.organisation.body
+    - field.field.node.organisation.field_best_practices
     - field.field.node.organisation.field_organisation_address
     - field.field.node.organisation.field_organisation_admins
     - field.field.node.organisation.field_organisation_logo
@@ -35,6 +36,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_best_practices:
+    type: options_buttons
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }

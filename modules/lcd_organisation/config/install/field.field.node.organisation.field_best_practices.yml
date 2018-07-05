@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_best_practices
+    - node.type.organisation
+    - taxonomy.vocabulary.organisation_best_practices
+id: node.organisation.field_best_practices
+field_name: field_best_practices
+entity_type: node
+bundle: organisation
+label: 'Quality score'
+description: 'Check the best practices listed here that apply to your development process. Be honest and critical. Visitors will be presented only the total score, not which points are or are not achieved.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      organisation_best_practices: organisation_best_practices
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

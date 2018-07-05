@@ -70,4 +70,39 @@ function lcd_organisation_install() {
     ])->save();
   }
 
+  $best_practices = [
+    "Supplier is using a controlled development process" =>
+      "Code is in version management and is fully automatically deployed to the production environment.",
+    "Supplier is following the current best practices" =>
+      "Customization meets the Drupal coding standards (https://www.drupal.org/docs/develop/standards), customization is controlled through peer reviews.",
+    "The supplier monitors the development process through a proven project method" =>
+      "For example, has certified scrum master(s) and/or PMP certified project managers.",
+    "Clients have constant insight into the progress of the project" =>
+      "Supplier uses an (online) environment with which the client can monitor the progress of the project at all times.",
+    "Supplier can guarantee the quality of the solution" =>
+      "Projects are provided with automatic and manual tests. With this, the supplier delivers a solution that will continue to work not only on completion, but also in the future.",
+    "Supplier can guarantee the progress of the process" =>
+      "Each role (frontend, backend, project management) is doubled so that sickness and holidays can be taken care of.",
+    "Supplier provides its solution of thorough documentation" =>
+      "Supplier provides custom made comprehensive and clear comments in the code. In addition, the delivery includes a documented solution description (such as an architecture plate with explanatory notes).",
+    "The management of websites takes place through a controlled and measurable process" =>
+      "Supplier uses a ticketing system for reporting and following up on issues.",
+    "Supplier proactively performs updates on the platform" =>
+      "Client has the certainty that (security) updates are installed quickly and in a controlled manner, making the application up to date.",
+    "Supplier provides extensive support for its solution" =>
+      "Client can contact the supplier 24x7 for problems with the website. Any hosting problems are resolved by the supplier. Agreements on this are laid down in a Service Level Agreement.",
+    "Supplier returns to the Drupal community" =>
+      "The supplier regularly returns to the community, both financially (sponsoring) and code (modules & patches). To make the latter transparent: supplier is in the top contributors of https://www.drupal.org/drupal-services/all/all (filter by country)",
+    "Supplier facilitates innovation and personal growth among its employees" =>
+      "People take part in Drupal events and/or courses during working hours and/or receives a fixed percentage of working time and/or sum for personal development.",
+  ];
+  foreach ($best_practices as $name => $description) {
+    \Drupal\taxonomy\Entity\Term::create([
+      'name' => $name,
+      'description' => $description,
+      'language' => 'en',
+      'vid' => 'organisation_best_practices',
+    ])->save();
+  }
+
 }
