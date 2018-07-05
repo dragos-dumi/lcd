@@ -5,7 +5,7 @@
  *
  * @throws \Drupal\Core\Entity\EntityStorageException
  */
-function lcd_events_install() {
+function lcd_event_install() {
   // Create a default event type
   $default_event_types = [
     'DrupalCamp',

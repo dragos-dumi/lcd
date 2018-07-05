@@ -1,5 +1,5 @@
-name: LCD events
-description: 'Provide Events content type and related configuration.'
+name: LCD event
+description: 'Provide Event content type and related configuration.'
 type: module
 core: 8.x
 dependencies:
