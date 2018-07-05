@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.case_study.body
+    - field.field.node.case_study.field_case_study_drupal_version
     - field.field.node.case_study.field_case_study_key_projects
     - field.field.node.case_study.field_case_study_orgranisations
     - field.field.node.case_study.field_case_study_screenshots
@@ -12,6 +13,7 @@ dependencies:
   module:
     - image
     - link
+    - options
     - text
     - user
 id: node.case_study.default
@@ -25,6 +27,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_case_study_drupal_version:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_case_study_key_projects:
     weight: 104

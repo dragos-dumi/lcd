@@ -10,7 +10,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Case study'
 type: case_study
-description: ''
+description: 'Use <em>case studies</em> to showcase projects created on Drupal.'
 help: ''
 new_revision: true
 preview_mode: 1

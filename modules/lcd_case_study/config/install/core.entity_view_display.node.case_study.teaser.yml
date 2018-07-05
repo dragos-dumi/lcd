@@ -4,6 +4,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.case_study.body
+    - field.field.node.case_study.field_case_study_key_projects
+    - field.field.node.case_study.field_case_study_orgranisations
+    - field.field.node.case_study.field_case_study_screenshots
+    - field.field.node.case_study.field_case_study_team_members
+    - field.field.node.case_study.field_case_study_website
     - node.type.case_study
   module:
     - text
@@ -26,4 +31,9 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_case_study_key_projects: true
+  field_case_study_orgranisations: true
+  field_case_study_screenshots: true
+  field_case_study_team_members: true
+  field_case_study_website: true

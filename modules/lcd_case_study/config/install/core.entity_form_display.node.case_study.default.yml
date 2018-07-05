@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.case_study.body
+    - field.field.node.case_study.field_case_study_drupal_version
     - field.field.node.case_study.field_case_study_key_projects
     - field.field.node.case_study.field_case_study_orgranisations
     - field.field.node.case_study.field_case_study_screenshots
@@ -22,7 +23,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
@@ -31,12 +32,18 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_case_study_drupal_version:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_case_study_key_projects:
-    weight: 124
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
@@ -45,7 +52,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_case_study_orgranisations:
-    weight: 125
+    weight: 12
     settings:
       match_operator: CONTAINS
       size: 60
@@ -54,7 +61,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_case_study_screenshots:
-    weight: 122
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -62,7 +69,7 @@ content:
     type: image_image
     region: content
   field_case_study_team_members:
-    weight: 126
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
@@ -71,7 +78,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_case_study_website:
-    weight: 123
+    weight: 9
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -80,7 +87,7 @@ content:
     region: content
   path:
     type: path
-    weight: 30
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -88,26 +95,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 3
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 6
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -115,7 +122,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60

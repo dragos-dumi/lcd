@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_case_study_drupal_version
+field_name: field_case_study_drupal_version
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Drupal 4.5.x'
+    -
+      value: '2'
+      label: 'Drupal 4.6.x'
+    -
+      value: '3'
+      label: 'Drupal 4.7.x'
+    -
+      value: '4'
+      label: 'Drupal 5.x'
+    -
+      value: '5'
+      label: 'Drupal 6.x'
+    -
+      value: '6'
+      label: 'Drupal 7.x'
+    -
+      value: '7'
+      label: 'Drupal 8.x'
+    -
+      value: '8'
+      label: 'Drupal 9.x'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
