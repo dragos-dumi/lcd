@@ -1,14 +1,14 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   module:
     - help
   theme:
-    - bartik
-id: bartik_help
-theme: bartik
-region: content
-weight: -30
+    - lcd_base_theme
+id: lcd_base_theme_help
+theme: lcd_base_theme
+region: help
+weight: -8
 provider: null
 plugin: help_block
 settings:

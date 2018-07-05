@@ -1,12 +1,12 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_local_tasks
-theme: bartik
-region: content
-weight: -40
+    - lcd_base_theme
+id: lcd_base_theme_local_tasks
+theme: lcd_base_theme
+region: header
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

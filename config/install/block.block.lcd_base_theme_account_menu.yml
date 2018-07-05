@@ -1,4 +1,4 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
@@ -6,11 +6,11 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_account_menu
-theme: bartik
-region: secondary_menu
-weight: 0
+    - lcd_base_theme
+id: lcd_base_theme_account_menu
+theme: lcd_base_theme
+region: main_menu_extra
+weight: -9
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -19,5 +19,5 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 2
 visibility: {  }

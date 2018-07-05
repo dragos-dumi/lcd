@@ -49,5 +49,5 @@ dependencies:
   - lcd_organisation
   - lcd_user_group
 themes:
-  - bartik
   - seven
+  - lcd_base_theme

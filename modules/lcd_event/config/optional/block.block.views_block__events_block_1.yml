@@ -7,9 +7,9 @@ dependencies:
     - system
     - views
   theme:
-    - bartik
+    - lcd_base_theme
 id: views_block__events_block_1
-theme: bartik
+theme: lcd_base_theme
 region: content
 weight: 1
 provider: null

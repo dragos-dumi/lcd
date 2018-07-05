@@ -1,12 +1,12 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_local_actions
-theme: bartik
-region: content
-weight: -20
+    - lcd_base_theme
+id: lcd_base_theme_local_actions
+theme: lcd_base_theme
+region: header
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:
