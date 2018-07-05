@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_group_location
+    - node.type.user_group
+  module:
+    - geofield
+id: node.user_group.field_user_group_location
+field_name: field_user_group_location
+entity_type: node
+bundle: user_group
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

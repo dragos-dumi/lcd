@@ -1,0 +1,19 @@
+name: LCD user group
+description: 'Provide User Group content type and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - node
+  - taxonomy
+  - views
+  - geofield
+  - geofield_map
+  - leaflet
+  - leaflet_views
+  - link
+  - datetime_range
+  - dynamic_entity_reference
+  - lcd_organisation
+  - lcd_event
+package: lcd

@@ -1,0 +1,61 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_group_sponsors
+    - node.type.organisation
+    - node.type.user_group
+  module:
+    - dynamic_entity_reference
+id: node.user_group.field_user_group_sponsors
+field_name: field_user_group_sponsors
+entity_type: node
+bundle: user_group
+label: Sponsors
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  node:
+    handler: 'default:node'
+    handler_settings:
+      target_bundles:
+        organisation: organisation
+      sort:
+        field: _none
+      auto_create: false
+      auto_create_bundle: ''
+  user:
+    handler: 'default:user'
+    handler_settings:
+      include_anonymous: false
+      filter:
+        type: _none
+      target_bundles: null
+      sort:
+        field: _none
+      auto_create: false
+  comment:
+    handler: 'default:comment'
+    handler_settings: {  }
+  contact_message:
+    handler: 'default:contact_message'
+    handler_settings: {  }
+  block_content:
+    handler: 'default:block_content'
+    handler_settings: {  }
+  menu_link_content:
+    handler: 'default:menu_link_content'
+    handler_settings: {  }
+  file:
+    handler: 'default:file'
+    handler_settings: {  }
+  shortcut:
+    handler: 'default:shortcut'
+    handler_settings: {  }
+  taxonomy_term:
+    handler: 'default:taxonomy_term'
+    handler_settings: {  }
+field_type: dynamic_entity_reference
