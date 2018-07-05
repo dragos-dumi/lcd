@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_organizers
     - field.field.node.event.field_event_type
     - field.field.node.event.field_event_website
     - node.type.event
@@ -74,6 +75,15 @@ content:
     third_party_settings: {  }
     type: geofield_map
     region: content
+  field_event_organizers:
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 40
+      placeholder: ''
+    third_party_settings: {  }
+    type: dynamic_entity_reference_default
+    region: content
   field_event_type:
     weight: 7
     settings: {  }
@@ -90,7 +100,7 @@ content:
     region: content
   path:
     type: path
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
