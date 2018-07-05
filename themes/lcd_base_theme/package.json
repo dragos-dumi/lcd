@@ -1,5 +1,5 @@
 {
-  "name": "drupal_france",
+  "name": "lcd_base_theme",
   "version": "1.0.0",
   "devDependencies": {
     "ajv": "^6.5.1",
