@@ -10,7 +10,7 @@ third_party_settings:
     parent: 'main:'
 name: Organisation
 type: organisation
-description: 'Entities such as commercial companies, NGOs, charities etc. in relation to your community'
+description: 'Entities such as commercial companies, NGOs, charities etc. in relation to your community.'
 help: ''
 new_revision: true
 preview_mode: 0

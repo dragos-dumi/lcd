@@ -17,7 +17,7 @@ dependencies:
 id: events
 label: Events
 module: views
-description: ''
+description: 'Shows a list of the future events and a map.'
 tag: ''
 base_table: node_field_data
 base_field: nid
