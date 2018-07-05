@@ -2,6 +2,8 @@ name: LCD
 type: profile
 description: 'Local Community Distribution'
 core: 8.x
+distribution:
+  name: 'Local Community Distribution'
 dependencies:
   - node
   - history
