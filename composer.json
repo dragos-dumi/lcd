@@ -15,5 +15,11 @@
     "support": {
         "issues": "http://drupal.org/project/issues/lcd",
         "source": "http://cgit.drupalcode.org/lcd"
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
     }
 }
