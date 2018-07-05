@@ -43,6 +43,7 @@ dependencies:
   - geofield_map
   - lcd_event
   - lcd_organisation
+  - lcd_case_study
 themes:
   - bartik
   - seven
