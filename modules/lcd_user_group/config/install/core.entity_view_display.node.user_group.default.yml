@@ -4,14 +4,12 @@ dependencies:
   config:
     - field.field.node.user_group.body
     - field.field.node.user_group.field_user_group_address
-    - field.field.node.user_group.field_user_group_location
     - field.field.node.user_group.field_user_group_organizers
     - field.field.node.user_group.field_user_group_sponsors
     - node.type.user_group
   module:
     - address
     - dynamic_entity_reference
-    - geofield
     - text
     - user
 id: node.user_group.default
@@ -32,14 +30,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: address_default
-    region: content
-  field_user_group_location:
-    weight: 103
-    label: above
-    settings:
-      output_format: wkt
-    third_party_settings: {  }
-    type: geofield_default
     region: content
   field_user_group_organizers:
     weight: 104

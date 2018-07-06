@@ -3,6 +3,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.user_group.body
+    - field.field.node.user_group.field_user_group_address
+    - field.field.node.user_group.field_user_group_organizers
+    - field.field.node.user_group.field_user_group_sponsors
     - node.type.user_group
   module:
     - user
@@ -16,4 +20,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  body: true
+  field_user_group_address: true
+  field_user_group_organizers: true
+  field_user_group_sponsors: true
