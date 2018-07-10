@@ -1,0 +1,55 @@
+#drupal-community {
+  background-image: url('../../images/drupal-community/header.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+#drupal-community div {
+  box-sizing: border-box;
+}
+#drupal-community .darkener {
+}
+#drupal-community .content {
+  max-width: calc(960px + 4em);
+  width: 100%;
+  min-height: 350px;
+  padding: 2rem 2.5rem 3.5rem;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  text-shadow: none;
+}
+#drupal-community .content > div {
+  flex: 1 1 40%;
+}
+#drupal-community div.message {
+  flex: 1 1 60%;
+  padding-top: 50px;
+}
+#drupal-community h2, #drupal-community p {
+  margin: .5rem 0 0;
+  font-weight: normal;
+}
+#drupal-community .logo {
+  height: auto;
+  width: 200px;
+  min-width: 200px;
+  padding-right: 4rem;
+}
+#drupal-community a {
+  color: #fff;
+  font-size: 1.25rem;
+  display: inline-block;
+  padding: .55rem 1.3rem;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+  margin-top: 1rem;
+}
+#drupal-community a:focus,
+#drupal-community a:hover {
+  background-color: #fff;
+  color: #4e4e4e;
+  border-color: #fff;
+}

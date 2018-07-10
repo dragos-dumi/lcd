@@ -1,0 +1,11 @@
+drupaleurope:
+  version: 1.0
+  css:
+    theme:
+      css/drupaleurope/styles.css: {}
+
+drupal-community:
+  version: 1.0
+  css:
+    theme:
+      css/drupal-community/styles.css: {}

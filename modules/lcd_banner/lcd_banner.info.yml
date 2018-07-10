@@ -1,0 +1,5 @@
+name: LCD banner
+description: 'Provide marketing banner.'
+type: module
+core: 8.x
+package: lcd
