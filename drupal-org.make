@@ -22,6 +22,9 @@ projects[config_split][version] = 1.3
 projects[config_update][type] = module
 projects[config_update][version] = 1.5
 
+projects[default_content][type] = module
+projects[default_content][version] = 1.0-alpha7
+
 projects[diff][type] = module
 projects[diff][version] = 1.0-rc2
 
