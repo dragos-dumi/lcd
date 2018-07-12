@@ -1,5 +1,5 @@
-name: LCD case study
-description: 'Provide Case Study content type.'
+name: LCD client
+description: 'Provide Client content type.'
 type: module
 core: 8.x
 dependencies:
