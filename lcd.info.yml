@@ -43,9 +43,12 @@ dependencies:
   - datetime_range
   - geofield
   - geofield_map
+  - lcd_banner
+  - lcd_case_study
+  - lcd_client
   - lcd_event
   - lcd_organisation
-  - lcd_case_study
+  - lcd_user_group
 themes:
   - bartik
   - seven
