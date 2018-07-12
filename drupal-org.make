@@ -52,6 +52,12 @@ projects[leaflet_views][version] = 1.0-beta
 projects[metatag][type] = module
 projects[metatag][version] = 1.5
 
+projects[migrate_plus][type] = module
+projects[migrate_plus][version] = 4.0-beta3
+
+projects[migrate_tools][type] = module
+projects[migrate_tools][version] = 4.0-rc1
+
 projects[paragraphs][type] = module
 projects[paragraphs][version] = 1.3
 
@@ -69,3 +75,6 @@ projects[swiftmailer][version] = 1.0-beta2
 
 projects[token][type] = module
 projects[token][version] = 1.3
+
+projects[webform][type] = module
+projects[webform][version] = 5.0-rc16
