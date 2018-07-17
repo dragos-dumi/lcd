@@ -34,6 +34,9 @@ projects[dynamic_entity_reference][version] = 1.5
 projects[eu_cookie_compliance][type] = module
 projects[eu_cookie_compliance][version] = 1.0
 
+projects[file_entity][type] = module
+projects[file_entity][version] = 2.0-beta6
+
 projects[geofield][type] = module
 projects[geofield][version] = 1.0-beta4
 
