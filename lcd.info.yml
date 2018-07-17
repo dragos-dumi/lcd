@@ -41,8 +41,7 @@ dependencies:
   - tour
   - automated_cron
   - datetime_range
-  - geofield
-  - geofield_map
+  - file_entity
   - lcd_banner
   - lcd_case_study
   - lcd_client
